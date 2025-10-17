@@ -1,0 +1,40 @@
+# ─────────────────────────────────────────────────────────
+# Boltzmenn — Jekyll config
+# Fill in url/baseurl with your live values when deploying
+# ─────────────────────────────────────────────────────────
+title: "Boltzmenn"
+description: "We help African businesses clean up chaos, rebuild stronger systems, and achieve predictable growth."
+url: "https://boltzmenn.com"   # ← set to your production origin
+baseurl: ""                     # e.g. "/repo-name" if using a project site
+
+# Brand & social
+twitter: "@boltzmenn"
+founder: "Rosario Anthony Waya"
+founding_date: "2020"
+og_image: "https://i.ibb.co/spvLbmXY/Build-dreams.png"
+same_as:
+  - "https://x.com/boltzmenn"
+  - "https://www.linkedin.com/company/boltzmenn/"
+
+# Build
+markdown: kramdown
+highlighter: none
+permalink: pretty
+
+# Exclude from build output
+exclude:
+  - node_modules/
+  - README.md
+  - .gitignore
+  - .github/
+  - package.json
+  - package-lock.json
+
+# Plugins (GitHub Pages safe set)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Feed settings (jekyll-feed)
+feed:
+  path: feed.xml
