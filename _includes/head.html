@@ -1,133 +1,46 @@
-<!-- ========================================= -->
-<!-- ✅ BOLTZMENN GLOBAL HEAD — SEO ENHANCED   -->
-<!-- Same structure; richer metadata           -->
-<!-- ========================================= -->
+<style>
+        body {
+            transition: opacity ease-in 0.2s;
+        }
 
-<meta charset="utf-8" />
-
-<title>
-  {%- if page.title -%}
-    {{ page.title }} · Boltzmenn
-  {%- else -%}
-    Boltzmenn — Fix and Scale Your Business
-  {%- endif -%}
-</title>
-
-{%- assign meta_description = page.description
-  | default: site.description
-  | default: "Boltzmenn helps African businesses clean up chaos, rebuild stronger systems, and achieve predictable growth through strategy, operations, automation, customer experience, and funding." -%}
-<meta name="description" content="{{ meta_description }}" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-{%- if page.noindex == true -%}
-<meta name="robots" content="noindex,nofollow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-{%- else -%}
-<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-{%- endif -%}
-
-<!-- ===== Canonical & Alternates ===== -->
-<link rel="canonical" href="{{ page.url | absolute_url }}" />
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}" />
-
-<!-- ===== Open Graph ===== -->
-<meta property="og:title" content="{{ page.og_title | default: page.title | default: 'Boltzmenn — Fix and Scale Your Business' }}" />
-<meta property="og:description" content="{{ page.og_description | default: meta_description }}" />
-<meta property="og:type" content="{% if page.layout == 'post' or page.collection == 'posts' %}article{% else %}website{% endif %}" />
-<meta property="og:url" content="{{ page.url | absolute_url }}" />
-<meta property="og:image" content="{{ page.og_image | default: site.og_image | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' }}" />
-<meta property="og:site_name" content="{{ site.title | default: 'Boltzmenn' }}" />
-<meta property="og:locale" content="{{ site.og_locale | default: 'en_US' }}" />
-
-<!-- ===== Twitter ===== -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ page.twitter_title | default: page.title | default: 'Boltzmenn — Fix and Scale Your Business' }}" />
-<meta name="twitter:description" content="{{ page.twitter_description | default: meta_description }}" />
-<meta name="twitter:image" content="{{ page.twitter_image | default: site.twitter_image | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' }}" />
-{%- if site.twitter_handle -%}
-<meta name="twitter:site" content="{{ site.twitter_handle }}" />
-<meta name="twitter:creator" content="{{ site.twitter_handle }}" />
-{%- endif -%}
-
-<!-- ===== Optional page-level data ===== -->
-{%- if page.author or site.author -%}
-<meta name="author" content="{{ page.author | default: site.author }}" />
-{%- endif -%}
-{%- if page.keywords -%}
-<meta name="keywords" content="{{ page.keywords | join: ', ' }}" />
-{%- endif -%}
-
-<!-- ===== Icons / Theme ===== -->
-<link rel="icon" href="https://i.ibb.co/Z6m4ws4V/boltz21.png" type="image/png" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' }}" />
-<meta name="theme-color" content="#0b8c88" />
-<meta name="msapplication-TileColor" content="#0b8c88" />
-
-<!-- ===== Fonts & CSS (unchanged) ===== -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-<link href="new.css" rel="stylesheet" />
-<link href="normalize.css" rel="stylesheet" />
-<link href="webflow.css" rel="stylesheet" />
-<link href="boltzmenn.webflow.css" rel="stylesheet" />
-
-<!-- ===== Webfont Loader (unchanged) ===== -->
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+<style>
+        .wf-force-outline-none[tabindex="-1"]:focus {
+            outline: none;
+        }
+    </style>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="apple-touch-icon" sizes="57x57" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/sasaki/static/img/touch-icons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/wp-content/themes/sasaki/static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/wp-content/themes/sasaki/static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/wp-content/themes/sasaki/static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/wp-content/themes/sasaki/static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/wp-content/themes/sasaki/static/img/favicons/manifest.json">
+<link rel="mask-icon" href="/wp-content/themes/sasaki/static/img/favicons/safari-pinned-tab.svg" color="#077070">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<link href="new.css" rel="stylesheet">
+<link href="normalize.css" rel="stylesheet">
+<link href="webflow.css" rel="stylesheet">
+<link href="boltzmenn.webflow.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
 <script type="text/javascript">
-  WebFont.load({ google: { families: ["Inter:regular,500,600,700"] } });
+  WebFont.load({
+    google: { families: ["Inter:regular,500,600,700"] },
+  });
 </script>
-
-<!-- ========================================= -->
-<!-- JSON-LD: Organization                     -->
-<!-- ========================================= -->
-{%- assign org_logo = site.logo | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' -%}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "{{ site.title | default: 'Boltzmenn' }}",
-  "url": "{{ site.url | default: ('' | absolute_url) }}",
-  "logo": "{{ org_logo }}",
-  "sameAs": [{% if site.same_as %}{{ site.same_as | join: '","' | prepend: '"' | append: '"' }}{% endif %}]
-}
-</script>
-
-<!-- ========================================= -->
-<!-- JSON-LD: WebSite + SearchAction           -->
-<!-- ========================================= -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "{{ site.title | default: 'Boltzmenn' }}",
-  "url": "{{ site.url | default: ('' | absolute_url) }}",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{{ site.url | default: ('' | absolute_url) }}/search?q={query}",
-    "query-input": "required name=query"
-  }
-}
-</script>
-
-<!-- ========================================= -->
-<!-- JSON-LD: Article (posts only)             -->
-<!-- ========================================= -->
-{%- if page.layout == 'post' or page.collection == 'posts' -%}
-{%- assign article_image = page.og_image | default: site.og_image | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' -%}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ page.title | escape }}",
-  "description": "{{ meta_description | escape }}",
-  "image": ["{{ article_image }}"],
-  "author": { "@type": "Person", "name": "{{ page.author | default: site.author | default: 'Boltzmenn' }}" },
-  "publisher": { "@type": "Organization", "name": "{{ site.title | default: 'Boltzmenn' }}", "logo": { "@type": "ImageObject", "url": "{{ org_logo }}" } },
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" }
-}
-</script>
-{%- endif -%}
