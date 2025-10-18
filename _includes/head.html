@@ -1,6 +1,6 @@
 <!-- ========================================= -->
-<!-- ✅ BOLTZMENN GLOBAL HEAD (Full Version)   -->
-<!-- Preserves homev2 structure; SEO enhanced  -->
+<!-- ✅ BOLTZMENN GLOBAL HEAD — SEO ENHANCED   -->
+<!-- Same structure; richer metadata           -->
 <!-- ========================================= -->
 
 <meta charset="utf-8" />
@@ -17,96 +17,117 @@
   | default: site.description
   | default: "Boltzmenn helps African businesses clean up chaos, rebuild stronger systems, and achieve predictable growth through strategy, operations, automation, customer experience, and funding." -%}
 <meta name="description" content="{{ meta_description }}" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+{%- if page.noindex == true -%}
+<meta name="robots" content="noindex,nofollow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+{%- else -%}
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-<meta name="keywords" content="{{ page.keywords | default: site.keywords | default: 'Boltzmenn, African SMEs, business growth, operations, automation, customer experience, funding, strategy, scale, revenue' }}" />
+{%- endif -%}
 
-<!-- Canonical -->
+<!-- ===== Canonical & Alternates ===== -->
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}" />
 
-<!-- Favicons (Boltzmenn) -->
-<link rel="icon" href="https://i.ibb.co/vxs0DQ6k/boltz2.png" type="image/png" />
-<link rel="apple-touch-icon" href="https://i.ibb.co/vxs0DQ6k/boltz2.png" />
-
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Boltzmenn" />
+<!-- ===== Open Graph ===== -->
 <meta property="og:title" content="{{ page.og_title | default: page.title | default: 'Boltzmenn — Fix and Scale Your Business' }}" />
 <meta property="og:description" content="{{ page.og_description | default: meta_description }}" />
+<meta property="og:type" content="{% if page.layout == 'post' or page.collection == 'posts' %}article{% else %}website{% endif %}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
-<meta property="og:image" content="{{ page.og_image | default: site.og_image | default: 'https://i.ibb.co/spvLbmXY/Build-dreams.png' }}" />
+<meta property="og:image" content="{{ page.og_image | default: site.og_image | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' }}" />
+<meta property="og:site_name" content="{{ site.title | default: 'Boltzmenn' }}" />
+<meta property="og:locale" content="{{ site.og_locale | default: 'en_US' }}" />
 
-<!-- Twitter -->
+<!-- ===== Twitter ===== -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ page.twitter_title | default: page.title | default: 'Boltzmenn — Fix and Scale Your Business' }}" />
 <meta name="twitter:description" content="{{ page.twitter_description | default: meta_description }}" />
-<meta name="twitter:image" content="{{ page.twitter_image | default: site.twitter_image | default: 'https://i.ibb.co/spvLbmXY/Build-dreams.png' }}" />
-<meta name="twitter:site" content="@boltzmenn" />
-<meta name="twitter:creator" content="@boltzmenn" />
+<meta name="twitter:image" content="{{ page.twitter_image | default: site.twitter_image | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' }}" />
+{%- if site.twitter_handle -%}
+<meta name="twitter:site" content="{{ site.twitter_handle }}" />
+<meta name="twitter:creator" content="{{ site.twitter_handle }}" />
+{%- endif -%}
 
-<!-- Fonts & CSS (as in homev2 + site CSS) -->
-<link href="https://fonts.googleapis.com" rel="preconnect" />
-<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:regular,500,600%7CInter+Tight:regular,500,600" media="all" />
-<link href="{{ '/new.css' | relative_url }}" rel="stylesheet" type="text/css" />
+<!-- ===== Optional page-level data ===== -->
+{%- if page.author or site.author -%}
+<meta name="author" content="{{ page.author | default: site.author }}" />
+{%- endif -%}
+{%- if page.keywords -%}
+<meta name="keywords" content="{{ page.keywords | join: ', ' }}" />
+{%- endif -%}
 
+<!-- ===== Icons / Theme ===== -->
+<link rel="icon" href="https://i.ibb.co/Z6m4ws4V/boltz21.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' }}" />
+<meta name="theme-color" content="#0b8c88" />
+<meta name="msapplication-TileColor" content="#0b8c88" />
 
-<!-- WebFont loader (from homev2) -->
+<!-- ===== Fonts & CSS (unchanged) ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link href="new.css" rel="stylesheet" />
+<link href="normalize.css" rel="stylesheet" />
+<link href="webflow.css" rel="stylesheet" />
+<link href="boltzmenn.webflow.css" rel="stylesheet" />
+
+<!-- ===== Webfont Loader (unchanged) ===== -->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-<script>
-  WebFont.load({ google: { families: ["Inter:regular,500,600","Inter Tight:regular,500,600"] }});
+<script type="text/javascript">
+  WebFont.load({ google: { families: ["Inter:regular,500,600,700"] } });
 </script>
 
-<!-- Webflow helper: add w-mod-js/touch -->
-<script>
-!function(o,c){
-  var n=c.documentElement,t=" w-mod-";
-  n.className+=t+"js";
-  ("ontouchstart" in o||o.DocumentTouch&&c instanceof DocumentTouch)&&
-  (n.className+=t+"touch");
-}(window,document);
-</script>
-
-<!-- Structured Data (Organization + Website) -->
+<!-- ========================================= -->
+<!-- JSON-LD: Organization                     -->
+<!-- ========================================= -->
+{%- assign org_logo = site.logo | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' -%}
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Boltzmenn",
-  "url":"https://boltzmenn.com",
-  "logo":"https://i.ibb.co/vxs0DQ6k/boltz2.png",
-  "sameAs":[
-    "https://x.com/boltzmenn",
-    "https://www.linkedin.com/company/boltzmenn/"
-  ],
-  "description":"{{ meta_description }}",
-  "foundingDate":"2020",
-  "founder":{"@type":"Person","name":"Rosario Anthony Waya"},
-  "contactPoint":[{
-    "@type":"ContactPoint",
-    "contactType":"customer support",
-    "areaServed":"NG",
-    "availableLanguage":["en"]
-  }]
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.title | default: 'Boltzmenn' }}",
+  "url": "{{ site.url | default: ('' | absolute_url) }}",
+  "logo": "{{ org_logo }}",
+  "sameAs": [{% if site.same_as %}{{ site.same_as | join: '","' | prepend: '"' | append: '"' }}{% endif %}]
 }
 </script>
+
+<!-- ========================================= -->
+<!-- JSON-LD: WebSite + SearchAction           -->
+<!-- ========================================= -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"Boltzmenn",
-  "url":"https://boltzmenn.com",
-  "potentialAction":{
-    "@type":"SearchAction",
-    "target":"https://boltzmenn.com/search?q={query}",
-    "query-input":"required name=query"
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title | default: 'Boltzmenn' }}",
+  "url": "{{ site.url | default: ('' | absolute_url) }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url | default: ('' | absolute_url) }}/search?q={query}",
+    "query-input": "required name=query"
   }
 }
 </script>
 
-<!-- Small helpers -->
-<style>
-  body { transition: opacity 0.2s ease-in; }
-  body[unresolved] { opacity:0; display:block; overflow:hidden; position:relative; }
-  .wf-force-outline-none[tabindex="-1"]:focus { outline: none; }
-</style>
+<!-- ========================================= -->
+<!-- JSON-LD: Article (posts only)             -->
+<!-- ========================================= -->
+{%- if page.layout == 'post' or page.collection == 'posts' -%}
+{%- assign article_image = page.og_image | default: site.og_image | default: 'https://i.ibb.co/Z6m4ws4V/boltz21.png' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ meta_description | escape }}",
+  "image": ["{{ article_image }}"],
+  "author": { "@type": "Person", "name": "{{ page.author | default: site.author | default: 'Boltzmenn' }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site.title | default: 'Boltzmenn' }}", "logo": { "@type": "ImageObject", "url": "{{ org_logo }}" } },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" }
+}
+</script>
+{%- endif -%}
