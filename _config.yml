@@ -4,8 +4,8 @@
 # ─────────────────────────────────────────────────────────
 title: "Boltzmenn"
 description: "We help African businesses clean up chaos, rebuild stronger systems, and achieve predictable growth."
-url: "https://boltzmenn.com"   # ← set to your production origin
-baseurl: ""                     # e.g. "/repo-name" if using a project site
+url: "https://rosarioanthonywaya.github.io"   # ← set to your production origin
+baseurl: "/Boltzmenn2026"                     # e.g. "/repo-name" if using a project site
 
 # Brand & social
 twitter: "@boltzmenn"
