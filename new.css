@@ -9663,7 +9663,7 @@ figure {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.629);   /* tweak 0.35–0.75 to taste */
+  background: rgba(0, 0, 0, 0.347);   /* tweak 0.35–0.75 to taste */
   pointer-events: none;
   z-index: 1;
 }
@@ -9739,4 +9739,50 @@ figure {
 }
 
 
+/* Hide mobile-only sections by default */
+.mobile-only {
+  display: none;
+}
 
+/* Show them on small screens */
+@media screen and (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+
+/* Target the Process image card */
+.bg-image-card-wrapper2 {
+  position: relative; /* wrapper is already relative, this reaffirms it */
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Kill the image fade from .bg-image-absolute/.opacity-50 */
+.bg-image-card-wrapper2 .bg-image-absolute {
+  opacity: 1 !important;
+  z-index: 0 !important;   /* bring it into the stacking context */
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+/* Dark overlay on top of the image, below text */
+.bg-image-card-wrapper2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.685);   /* tweak 0.35–0.75 to taste */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ensure the content sits above the overlay */
+.bg-image-card-wrapper2 .testimonial-v3-content-wrapper {
+  position: relative;
+  z-index: 2;
+}
