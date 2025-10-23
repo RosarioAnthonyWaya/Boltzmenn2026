@@ -1,0 +1,410 @@
+---
+layout: default
+title: Welcome to Boltzmenn
+---
+<!-- Your page body content goes here; the header and footer wrap it via the layout -->
+
+
+        <section class="section hero-v4">
+            <div class="w-layout-blockcontainer container-default w-container">
+                <div data-w-id="7c543c38-a888-ed9f-f282-5d703b37ee65" style="opacity: 1; filter: blur(0px);" class="hero-v4-content">
+                                       <h1 class="hero-title"><span class="title-neutral">Not another conference.. </span><br>Just a community <br>that gets you</h1>
+
+<style>
+/* mobile-first */
+.hero-title{ 
+  font-size: 48px;       /* mobile size */
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* tablet / small desktop */
+@media (min-width: 768px){
+  .hero-title{ font-size: 56px; }
+}
+
+/* large desktop */
+@media (min-width: 1440px){
+  .hero-title{ font-size: 72px; }
+}
+</style>
+                    
+                    <div class="inner-container _454px">
+                        <p>The BoltzRoom Community is where African founders come to breathe — 
+                            to ask honest questions, get real answers, and connect with others who know what 
+                            it feels like to build from scratch.
+                            <br>
+                            <br>
+                            No theory. No noise. Just real people fixing real businesses — together.</p>
+                        <div class="mg-top-small">
+                            <div class="form-block _590px w-form">
+                               <div data-fillout-id="guNdxHCBt3us" data-fillout-embed-type="popup" data-fillout-button-text="Join the community" data-fillout-dynamic-resize data-fillout-button-color="#0B8C88" data-fillout-button-size="large" data-fillout-inherit-parameters data-fillout-popup-size="medium"></div><script src="https://server.fillout.com/embed/v1/"></script> </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div data-w-id="65adce01-2021-b40c-f63f-2b87b92fdf12" style="opacity: 1; filter: blur(0px);" class="image-wrapper hero-v4-image-wrapper">
+                    <img src="https://i.ibb.co/YFV5KdLN/LEM4588-1.jpg" loading="eager" width="2268" height="2442" alt="Hero V4 - Boltzmenn strategists | boltzroom by boltzmenn" 
+                    srcset="
+                   https://i.ibb.co/YFV5KdLN/LEM4588-1.jpg 500w, 
+                   https://i.ibb.co/YFV5KdLN/LEM4588-1.jpg 800w, 
+                   https://i.ibb.co/YFV5KdLN/LEM4588-1.jpg 2268w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image cover-image"></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="w-layout-blockcontainer container-default w-container">
+            <div data-w-id="b89e91bf-daad-6c68-4633-55668c23089d" class="section-divider-wrapper">
+                <div class="overflow-hidden flex-don-t-shrink-or-grow">
+                    <div class="divider-text" style="will-change: transform; transform: translate3d(0px, 120%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">02/ What’s new</div>
+                </div>
+                <div class="section-divider" style="will-change: width, height; width: 0%;"></div>
+            </div>
+        </div>
+
+        <section class="section">
+    <div class="w-layout-blockcontainer container-default w-container">
+        <div class="w-layout-grid grid-2-columns _2fr---1fr">
+            <div id="w-node-fcc986f5-bf48-e2c8-c569-1a38d4e6c0ae-73d4eccc" data-w-id="fcc986f5-bf48-e2c8-c569-1a38d4e6c0ae" style="opacity: 1; filter: blur(0px);">
+                <h2><span class="title-neutral">What You’ll Get</span> When You Join</h2>
+                <div class="mg-top-3x-extra-small">
+                    <p>Here’s what happens when you step into the BoltzRoom circle:.</p>
+                </div>
+                <div class="mg-top-small">
+                    <div class="buttons-row left">
+                        <div data-fillout-id="guNdxHCBt3us" data-fillout-embed-type="popup" data-fillout-button-text="Join the community" data-fillout-dynamic-resize data-fillout-button-color="#0B8C88" data-fillout-button-size="large" data-fillout-inherit-parameters data-fillout-popup-size="medium"></div><script src="https://server.fillout.com/embed/v1/"></script>
+                    </div>
+                </div>
+            </div>
+            <!-- ✅ Drop-in marquee script (vanilla JS + tiny CSS) -->
+<style>
+  .marquee-row { overflow: hidden; }
+  .gallery-marquee { display: flex; gap: 24px; will-change: transform; }
+  .gallery-image img { display:block; height:auto; }
+  /* pause on hover */
+  .gallery-marquee[data-paused="true"] { animation-play-state: paused !important; }
+  /* keyframes used for smooth, GPU-friendly scroll */
+  @keyframes gallery-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+</style>
+
+<script>
+(function () {
+  const isMobile = matchMedia('(max-width: 767px)').matches;
+
+  document.querySelectorAll('.gallery-marquee').forEach((track, i) => {
+    // 1) Make content seamless by duplicating until width >= 2x
+    const wrap = document.createElement('div');
+    wrap.style.display = 'flex';
+    wrap.style.gap = getComputedStyle(track).gap || '24px';
+
+    // move existing children into an array
+    const items = Array.from(track.children);
+    items.forEach(el => wrap.appendChild(el.cloneNode(true)));
+    items.forEach(el => wrap.appendChild(el.cloneNode(true))); // at least 2x
+    track.innerHTML = '';
+    track.appendChild(wrap);
+
+    // 2) Compute speed (seconds) – slower on mobile by default
+    const baseSpeed = Number(track.getAttribute('data-speed')) || 30; // seconds for one loop
+    const speed = isMobile ? baseSpeed * 1.3 : baseSpeed;
+
+    // 3) Apply CSS animation
+    track.style.setProperty('--marquee-speed', speed + 's');
+    track.style.animation = `gallery-scroll var(--marquee-speed) linear infinite`;
+
+    // Alternate direction for every other row (nice effect)
+    if (i % 2 === 1) {
+      track.style.animationDirection = 'reverse';
+    }
+
+    // 4) Pause on hover
+    track.addEventListener('mouseenter', () => track.dataset.paused = 'true');
+    track.addEventListener('mouseleave', () => track.dataset.paused = 'false');
+
+    // 5) Respect reduced motion
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      track.style.animation = 'none';
+      track.style.transform = 'none';
+    }
+  });
+})();
+</script>
+
+            <div data-w-id="19eeb4e2-8f18-1c88-1af8-fa61338b8ee4" style="opacity: 1; filter: blur(0px);" class="w-layout-grid perks-grid">
+                <div>
+                    <h3 class="display-6">Real Conversations. Real Problems. Real People</h3>
+                    <div class="mg-top-3x-extra-small">
+                        <p>Real founders share what’s working and what’s not. No filters, no fake success stories.</p>
+                    </div>
+                </div>
+                <div class="divider show-in-mbp"></div>
+                <div>
+                    <h3 class="display-6">Real Accountability</h3>
+                    <div class="mg-top-3x-extra-small">
+                        <p>We check in, not to judge, but to keep you moving — because business shouldn’t feel like survival every day.</p>
+                    </div>
+                </div>
+                <div id="w-node-_0c704f7e-08af-fcd4-5626-ee021dadfe69-73d4eccc" class="divider"></div>
+                <div>
+                    <h3 class="display-6">Monthly “Fix My Business” Sessions</h3>
+                    <div class="mg-top-3x-extra-small">
+                        <p>Live online meetups where experts and members troubleshoot one member’s challenge together.</p>
+                    </div>
+                </div>
+                <div class="divider show-in-mbp"></div>
+                <div>
+                    <h3 class="display-6">Offline Founder Circles</h3>
+                    <div class="mg-top-3x-extra-small">
+                        <p>Physical meetups in Lagos, Abuja, and Accra where we eat, laugh, and learn — not network in suits.</p>
+                    </div>
+                </div>
+                <div id="w-node-c33075df-2caf-9d0e-b438-bcb1f9a903fd-73d4eccc" class="divider"></div>
+                <div>
+                    <h3 class="display-6">Learn Directly from the People Who Fix Businesses Daily</h3>
+                    <div class="mg-top-3x-extra-small">
+                        <p>Priority invites to mini-clinics on sales, finance, automation, and customer experience..</p>
+                    </div>
+                </div>
+                <div class="divider show-in-mbp"></div>
+                <div>
+                    <h3 class="display-6">Funding Readiness Support</h3>
+                    <div class="mg-top-3x-extra-small">
+                        <p>Early access to Sturgeon, Boltzmenn’s revenue-based funding program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+        <section class="section medium">
+            <div class="w-layout-blockcontainer container-default w-container">
+                <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f143" style="opacity: 1; filter: blur(0px);" class="title-left---content-right">
+                    <h2><span class="title-neutral">Latest</span> articles</h2>
+                    <div class="categories-list w-dyn-list">
+                        <div role="list" class="category-badges-wrapper w-dyn-items">
+                            <div role="listitem" class="category-badges-wrapper w-dyn-item"><a href="/blog-pages/blog-v3" aria-current="page" class="category-badge w--current">All</a><a href="/blog-categories/production" class="category-badge">Production</a></div>
+                            <div role="listitem" class="category-badges-wrapper w-dyn-item"><a href="/blog-pages/blog-v3" aria-current="page" class="category-badge w-condition-invisible w--current">All</a><a href="/blog-categories/portfolio" class="category-badge">Portfolio</a></div>
+                            <div role="listitem" class="category-badges-wrapper w-dyn-item"><a href="/blog-pages/blog-v3" aria-current="page" class="category-badge w-condition-invisible w--current">All</a><a href="/blog-categories/tutorials" class="category-badge">Tutorials</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mg-top-large">
+                    <div class="w-dyn-list">
+                        <div role="list" class="_2-items-grid w-dyn-items">
+                            <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f154" role="listitem" class="sibling-item w-dyn-item" style="filter: grayscale(0%);"><a data-w-id="dfa1dea0-58aa-4cbe-dae0-5cca27bc8092" href="/blog-posts/how-to-start-your-career-as-a-film-director" class="text-decoration-none w-inline-block" style="opacity: 1; filter: blur(0px);">
+                                    <div class="image-wrapper border-image-default"><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806887b67f98f04654ddec1_how-to-start-your-career-4-3-thumbnail-cinemaflow-webflow-template.jpg" loading="lazy" width="1830" height="1356" alt="How to start your career as a film director" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806887b67f98f04654ddec1_how-to-start-your-career-4-3-thumbnail-cinemaflow-webflow-template-p-500.jpg 500w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806887b67f98f04654ddec1_how-to-start-your-career-4-3-thumbnail-cinemaflow-webflow-template-p-800.jpg 800w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806887b67f98f04654ddec1_how-to-start-your-career-4-3-thumbnail-cinemaflow-webflow-template-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806887b67f98f04654ddec1_how-to-start-your-career-4-3-thumbnail-cinemaflow-webflow-template-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806887b67f98f04654ddec1_how-to-start-your-career-4-3-thumbnail-cinemaflow-webflow-template.jpg 1830w" class="image opacity-70"></div>
+                                    <div class="mg-top-small">
+                                        <div class="inner-container _440px _100-tablet">
+                                            <h3 class="display-7">How to start your career as a film director</h3>
+                                        </div>
+                                        <div class="mg-top-2x-extra-small">
+                                            <div class="flex-start gap-3x-extra-small">
+                                                <div class="text-titles mid">Production</div>
+                                                <div class="divider-details"></div>
+                                                <div class="text-titles mid">Sep 25, 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f154" role="listitem" class="sibling-item w-dyn-item" style="filter: grayscale(0%);"><a data-w-id="dfa1dea0-58aa-4cbe-dae0-5cca27bc8092" href="/blog-posts/what-do-you-need-to-start-color-grading-professionally" class="text-decoration-none w-inline-block" style="opacity: 1; filter: blur(0px);">
+                                    <div class="image-wrapper border-image-default"><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68068830182190692e3785ad_what-do-you-need-to-start-4-3-thumbnail-cinemaflow-webflow-template.jpg" loading="lazy" width="1830" height="1356" alt="What do you need to start color grading professionally?" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68068830182190692e3785ad_what-do-you-need-to-start-4-3-thumbnail-cinemaflow-webflow-template-p-500.jpg 500w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68068830182190692e3785ad_what-do-you-need-to-start-4-3-thumbnail-cinemaflow-webflow-template-p-800.jpg 800w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68068830182190692e3785ad_what-do-you-need-to-start-4-3-thumbnail-cinemaflow-webflow-template-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68068830182190692e3785ad_what-do-you-need-to-start-4-3-thumbnail-cinemaflow-webflow-template-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68068830182190692e3785ad_what-do-you-need-to-start-4-3-thumbnail-cinemaflow-webflow-template.jpg 1830w" class="image opacity-70"></div>
+                                    <div class="mg-top-small">
+                                        <div class="inner-container _440px _100-tablet">
+                                            <h3 class="display-7">What do you need to start color grading professionally?</h3>
+                                        </div>
+                                        <div class="mg-top-2x-extra-small">
+                                            <div class="flex-start gap-3x-extra-small">
+                                                <div class="text-titles mid">Portfolio</div>
+                                                <div class="divider-details"></div>
+                                                <div class="text-titles mid">Apr 21, 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f154" role="listitem" class="sibling-item w-dyn-item" style="filter: grayscale(0%);"><a data-w-id="dfa1dea0-58aa-4cbe-dae0-5cca27bc8092" href="/blog-posts/how-to-remove-audio-background-noise-easily" class="text-decoration-none w-inline-block" style="opacity: 1; filter: blur(0px);">
+                                    <div class="image-wrapper border-image-default"><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806880738c708976998b90b_how-to-remove-audio-background-4-3-thumbnail-cinemaflow-webflow-template.jpg" loading="lazy" width="1830" height="1356" alt="How to remove audio background noise easily" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806880738c708976998b90b_how-to-remove-audio-background-4-3-thumbnail-cinemaflow-webflow-template-p-500.jpg 500w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806880738c708976998b90b_how-to-remove-audio-background-4-3-thumbnail-cinemaflow-webflow-template-p-800.jpg 800w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806880738c708976998b90b_how-to-remove-audio-background-4-3-thumbnail-cinemaflow-webflow-template-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806880738c708976998b90b_how-to-remove-audio-background-4-3-thumbnail-cinemaflow-webflow-template-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/6806880738c708976998b90b_how-to-remove-audio-background-4-3-thumbnail-cinemaflow-webflow-template.jpg 1830w" class="image opacity-70"></div>
+                                    <div class="mg-top-small">
+                                        <div class="inner-container _440px _100-tablet">
+                                            <h3 class="display-7">How to remove audio background noise easily</h3>
+                                        </div>
+                                        <div class="mg-top-2x-extra-small">
+                                            <div class="flex-start gap-3x-extra-small">
+                                                <div class="text-titles mid">Tutorials</div>
+                                                <div class="divider-details"></div>
+                                                <div class="text-titles mid">Apr 24, 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f154" role="listitem" class="sibling-item w-dyn-item" style="filter: grayscale(0%);"><a data-w-id="dfa1dea0-58aa-4cbe-dae0-5cca27bc8092" href="/blog-posts/how-to-win-clients-trust-as-a-freelance-video-editor" class="text-decoration-none w-inline-block" style="opacity: 1; filter: blur(0px);">
+                                    <div class="image-wrapper border-image-default"><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687d852d6cf57cdf8d84a_how-to-win-clients-4-3-thumbnail-cinemaflow-webflow-template.jpg" loading="lazy" width="1830" height="1356" alt="How to win clients’ trust as a freelance video editor" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687d852d6cf57cdf8d84a_how-to-win-clients-4-3-thumbnail-cinemaflow-webflow-template-p-500.jpg 500w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687d852d6cf57cdf8d84a_how-to-win-clients-4-3-thumbnail-cinemaflow-webflow-template-p-800.jpg 800w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687d852d6cf57cdf8d84a_how-to-win-clients-4-3-thumbnail-cinemaflow-webflow-template-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687d852d6cf57cdf8d84a_how-to-win-clients-4-3-thumbnail-cinemaflow-webflow-template-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687d852d6cf57cdf8d84a_how-to-win-clients-4-3-thumbnail-cinemaflow-webflow-template.jpg 1830w" class="image opacity-70"></div>
+                                    <div class="mg-top-small">
+                                        <div class="inner-container _440px _100-tablet">
+                                            <h3 class="display-7">How to win clients’ trust as a freelance video editor</h3>
+                                        </div>
+                                        <div class="mg-top-2x-extra-small">
+                                            <div class="flex-start gap-3x-extra-small">
+                                                <div class="text-titles mid">Production</div>
+                                                <div class="divider-details"></div>
+                                                <div class="text-titles mid">Apr 24, 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f154" role="listitem" class="sibling-item w-dyn-item" style="filter: grayscale(0%);"><a data-w-id="dfa1dea0-58aa-4cbe-dae0-5cca27bc8092" href="/blog-posts/how-to-build-an-affordable-pro-studio-for-your-videos" class="text-decoration-none w-inline-block" style="opacity: 1; filter: blur(0px);">
+                                    <div class="image-wrapper border-image-default"><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687a35eb96a5181de8429_how-to-build-an-affordable-pro-studio-4-3-thumbnail-cinemaflow-webflow-template.jpg" loading="lazy" width="1830" height="1356" alt="How to build an affordable pro studio for your videos" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687a35eb96a5181de8429_how-to-build-an-affordable-pro-studio-4-3-thumbnail-cinemaflow-webflow-template-p-500.jpg 500w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687a35eb96a5181de8429_how-to-build-an-affordable-pro-studio-4-3-thumbnail-cinemaflow-webflow-template-p-800.jpg 800w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687a35eb96a5181de8429_how-to-build-an-affordable-pro-studio-4-3-thumbnail-cinemaflow-webflow-template-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687a35eb96a5181de8429_how-to-build-an-affordable-pro-studio-4-3-thumbnail-cinemaflow-webflow-template-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/680687a35eb96a5181de8429_how-to-build-an-affordable-pro-studio-4-3-thumbnail-cinemaflow-webflow-template.jpg 1830w" class="image opacity-70"></div>
+                                    <div class="mg-top-small">
+                                        <div class="inner-container _440px _100-tablet">
+                                            <h3 class="display-7">How to build an affordable pro studio for your videos</h3>
+                                        </div>
+                                        <div class="mg-top-2x-extra-small">
+                                            <div class="flex-start gap-3x-extra-small">
+                                                <div class="text-titles mid">Portfolio</div>
+                                                <div class="divider-details"></div>
+                                                <div class="text-titles mid">Apr 21, 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f154" role="listitem" class="sibling-item w-dyn-item"><a data-w-id="dfa1dea0-58aa-4cbe-dae0-5cca27bc8092" href="/blog-posts/5-video-editing-workflows-to-help-organize-your-footages" class="text-decoration-none w-inline-block" style="opacity: 1; filter: blur(0px);">
+                                    <div class="image-wrapper border-image-default"><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68067616b7c5561cff0131b9_5-video-editing-workflows-4-3-thumbnail-cinemaflow-webflow-template.jpg" loading="lazy" width="1830" height="1356" alt="5 video editing workflows to help organize your footage" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68067616b7c5561cff0131b9_5-video-editing-workflows-4-3-thumbnail-cinemaflow-webflow-template-p-500.jpg 500w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68067616b7c5561cff0131b9_5-video-editing-workflows-4-3-thumbnail-cinemaflow-webflow-template-p-800.jpg 800w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68067616b7c5561cff0131b9_5-video-editing-workflows-4-3-thumbnail-cinemaflow-webflow-template-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70d2/68067616b7c5561cff0131b9_5-video-editing-workflows-4-3-thumbnail-cinemaflow-webflow-template.jpg 1830w" class="image opacity-70"></div>
+                                    <div class="mg-top-small">
+                                        <div class="inner-container _440px _100-tablet">
+                                            <h3 class="display-7">5 video editing workflows to help organize your footage</h3>
+                                        </div>
+                                        <div class="mg-top-2x-extra-small">
+                                            <div class="flex-start gap-3x-extra-small">
+                                                <div class="text-titles mid">Tutorials</div>
+                                                <div class="divider-details"></div>
+                                                <div class="text-titles mid">Apr 21, 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                        <div data-w-id="e92c018e-0ae0-be55-cc47-52e85c00f159" style="opacity: 1; filter: blur(0px);" role="navigation" aria-label="List" class="w-pagination-wrapper pagination-wrapper"><a href="?805832e7_page=2" aria-label="Next Page" class="w-pagination-next slider-arrow pagination-right">
+                                <div class="flex-center"><svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6.43146 12.3996L11.1699 7.99961L6.43146 3.59961" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                                    </svg></div>
+                            </a>
+                            <link rel="prerender" href="?805832e7_page=2">
+                            <div aria-label="Page 1 of 2" role="heading" class="w-page-count page-count">1 / 2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+<section class="section overflow-hidden">
+    <div class="w-layout-blockcontainer container-default w-container">
+        <div data-w-id="d3d015f3-9402-d540-d254-ac566cd7c742" style="opacity: 1; filter: blur(0px);" class="title-left---content-right center-tablet">
+            <div class="inner-container _630px">
+                <h2><span class="title-neutral">Follow our work</span> on Instagram</h2>
+                <div class="mg-top-3x-extra-small">
+                    <p>Lorem ipsum dolor sit amet consectetur ultrices tempus scelerisque et nulla vestibulum lacus ultrices proin nunc semper urna urna nunc aliquam eleifend sagittis elementum.</p>
+                </div>
+            </div>
+            <div class="gallery-details-wrapper">
+                <div class="instagram-avatar-wrapper">
+                    <div class="instagram-avatar"><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70c5/680934b01d4018a0cae01ef2_avatar-icon-cinemaflow-webflow-template.svg" loading="lazy" width="48" height="48" alt="Avatar Icon - Boltzmenn strategists | boltzroom by boltzmenn"></div>
+                    <div class="instagram-handle">
+                        <div>@cinemaflow</div><img src="https://cdn.prod.website-files.com/67ffcb39ea532f58e00a70c5/680934b1f95d5a8021d31f96_blue-check-icon-cinemaflow-webflow-template.svg" loading="eager" alt="Blue Check Icon - Boltzmenn strategists | boltzroom by boltzmenn">
+                    </div>
+                </div>
+                <div class="divider-vertical gallery-divider"></div>
+               <div data-fillout-id="guNdxHCBt3us" data-fillout-embed-type="popup" data-fillout-button-text="Join the community" data-fillout-dynamic-resize data-fillout-button-color="#0B8C88" data-fillout-button-size="small" data-fillout-inherit-parameters data-fillout-popup-size="medium"></div><script src="https://server.fillout.com/embed/v1/"></script>  </div>
+        </div>
+        <div class="mg-top-large">
+            <div data-w-id="d3d015f3-9402-d540-d254-ac566cd7c757" style="opacity: 1; filter: blur(0px);" class="marquee-row">
+                
+                
+
+
+
+                <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e0" class="gallery-marquee marquee sibling-item" style="transform: translate3d(-11.621%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+         
+                    01           <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e1" class="sibling-item">
+            <a href="https://www.instagram.com/" target="_blank" class="gallery-image w-inline-block">
+                <img src="
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                srcset="
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 500w, 
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+           
+           
+           02         <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e4" class="sibling-item" style="filter: grayscale(0%);">
+            <a href="https://www.instagram.com/" target="_blank" class="gallery-image w-inline-block">
+                <img src="https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                srcset="
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 500w, 
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+           
+           
+            03       <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e7" class="sibling-item" style="filter: grayscale(0%);">
+                <a href="https://www.instagram.com/" target="_blank" class="gallery-image w-inline-block">
+                    <img src="https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                    srcset="
+                    https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 500w, 
+                    https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+
+                04     <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1ea" class="sibling-item" style="filter: grayscale(0%);">
+                <a href="https://www.instagram.com/" class="gallery-image w-inline-block">
+                    <img src="https://i.ibb.co/fzjnL479/3N7D9969.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                    srcset="
+                    https://i.ibb.co/fzjnL479/3N7D9969.jpg 500w, 
+                    https://i.ibb.co/fzjnL479/3N7D9969.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+                </div>
+
+<div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e0" class="gallery-marquee marquee sibling-item" style="transform: translate3d(-11.621%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+         
+                    01           <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e1" class="sibling-item">
+            <a href="https://www.instagram.com/" target="_blank" class="gallery-image w-inline-block">
+                <img src="
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                srcset="
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 500w, 
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+           
+           
+           02         <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e4" class="sibling-item" style="filter: grayscale(0%);">
+            <a href="https://www.instagram.com/" target="_blank" class="gallery-image w-inline-block">
+                <img src="https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                srcset="
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg 500w, 
+                https://i.ibb.co/35PZJRtW/3-N7-D9936-2.jpg1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+           
+           
+            03       <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1e7" class="sibling-item" style="filter: grayscale(0%);">
+                <a href="https://www.instagram.com/" target="_blank" class="gallery-image w-inline-block">
+                    <img src="https://i.ibb.co/8t42gTn/3N7D0128.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                    srcset="
+                    https://i.ibb.co/8t42gTn/3N7D0128.jpg 500w, 
+                    https://i.ibb.co/8t42gTn/3N7D0128.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+
+                04     <div data-w-id="445fc11c-8b75-93cb-464e-ecb539c8e1ea" class="sibling-item" style="filter: grayscale(0%);">
+                <a href="https://www.instagram.com/" class="gallery-image w-inline-block">
+                    <img src="https://i.ibb.co/fzjnL479/3N7D9969.jpg" loading="lazy" width="1200" height="1194" alt="Instagram Image - Boltzmenn strategists | boltzroom by boltzmenn" 
+                    srcset="
+                    https://i.ibb.co/fzjnL479/3N7D9969.jpg 500w, 
+                    https://i.ibb.co/fzjnL479/3N7D9969.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" class="image"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    -->
